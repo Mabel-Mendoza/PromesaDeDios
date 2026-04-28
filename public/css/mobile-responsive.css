@@ -252,6 +252,7 @@ html, body {
 
 /* ── SECCIÓN POLAROID (catálogo preview en index) ─────────── */
 /* ── SECCIÓN POLAROID BONITA MOBILE ───────────────── */
+/* ── POLAROID MOBILE BONITAS ───────────────── */
 @media (max-width: 768px) {
 
   .flor-polaroid-grid,
@@ -259,40 +260,59 @@ html, body {
   [class*="polaroid-grid"]{
     display: grid !important;
     grid-template-columns: 1fr !important;
-    gap: 1.2rem !important;
+    gap: 1.4rem !important;
+    padding: 0 1rem !important;
   }
 
-  .flor-card-polaroid {
+  .flor-card-polaroid{
     width: 100% !important;
-    max-width: 360px !important;
+    max-width: 340px !important;
     margin: auto !important;
-    padding: 10px !important;
-    border-radius: 18px !important;
+
+    background: #ffffff !important;
+    padding: 12px 12px 22px 12px !important; /* borde polaroid */
+    border-radius: 4px !important;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.15) !important;
+
+    transform: rotate(-1deg);
+    transition: all .3s ease;
   }
 
-  .flor-card-polaroid img {
+  .flor-card-polaroid:nth-child(even){
+    transform: rotate(1deg);
+  }
+
+  .flor-card-polaroid:hover{
+    transform: rotate(0deg) scale(1.02);
+  }
+
+  .flor-card-polaroid img{
     width: 100% !important;
-    height: 240px !important;
+    height: 235px !important;
     object-fit: cover !important;
-    border-radius: 14px !important;
-    aspect-ratio: auto !important;
+    display: block !important;
+    border-radius: 2px !important;
   }
 
-  .flor-card-polaroid h4 {
-    font-size: 1.3rem !important;
+  .flor-card-polaroid h4{
+    font-size: 1.2rem !important;
     margin-top: 1rem !important;
+    text-align: center !important;
+    color: #6a4e44 !important;
   }
 
-  .flor-card-polaroid p {
-    font-size: 0.95rem !important;
+  .flor-card-polaroid p{
+    font-size: 0.92rem !important;
+    text-align: center !important;
     line-height: 1.5 !important;
+    margin-top: .4rem !important;
   }
 
-  .flor-card-polaroid .btn,
-  .flor-card-polaroid button,
-  .flor-card-polaroid a {
+  .flor-card-polaroid a,
+  .flor-card-polaroid button{
     width: 100% !important;
-    margin-top: 1rem !important;
+    margin-top: .9rem !important;
   }
 
 }
