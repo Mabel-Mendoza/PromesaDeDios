@@ -438,7 +438,15 @@ html, body {
   .footer-col ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start !important; /* 👈 izquierda */
+  }
+
+  .footer-col ul li {
+    text-align: left !important;
+  }
+
+  .footer-col.nav-col ul {
+  align-items: flex-start !important;
   }
 
   .footer-redes {
