@@ -253,16 +253,19 @@ html, body {
 /* ── SECCIÓN POLAROID (catálogo preview en index) ─────────── */
 @media (max-width: 768px) {
   .flor-card-polaroid {
-    width: calc(50% - 0.5rem) !important;
-    min-width: 130px !important;
-    padding: 8px 8px 18px 8px !important;
-  }
+  width: calc(50% - 0.5rem) !important;
+  min-width: 130px !important;
+  padding: 6px 6px 12px 6px !important; /* menos espacio abajo */
+}
 
-  .flor-card-polaroid img {
-    height: 120px !important;
-    object-fit: cover;
-    width: 100%;
-  }
+.flor-card-polaroid img {
+  height: 140px !important; /* más equilibrio */
+  object-fit: cover;
+  width: 100%;
+  border-radius: 6px !important;
+   aspect-ratio: 1 / 1 !important;
+}
+
 }
 
 /* ── ABOUT PAGE ───────────────────────────────────────────── */
