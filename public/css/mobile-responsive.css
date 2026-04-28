@@ -251,20 +251,49 @@ html, body {
 }
 
 /* ── SECCIÓN POLAROID (catálogo preview en index) ─────────── */
+/* ── SECCIÓN POLAROID BONITA MOBILE ───────────────── */
 @media (max-width: 768px) {
-  .flor-card-polaroid {
-  width: calc(50% - 0.5rem) !important;
-  min-width: 130px !important;
-  padding: 6px 6px 12px 6px !important; /* menos espacio abajo */
-}
 
-.flor-card-polaroid img {
-  height: 140px !important; /* más equilibrio */
-  object-fit: cover;
-  width: 100%;
-  border-radius: 6px !important;
-   aspect-ratio: 1 / 1 !important;
-}
+  .flor-polaroid-grid,
+  .polaroid-grid,
+  [class*="polaroid-grid"]{
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.2rem !important;
+  }
+
+  .flor-card-polaroid {
+    width: 100% !important;
+    max-width: 360px !important;
+    margin: auto !important;
+    padding: 10px !important;
+    border-radius: 18px !important;
+  }
+
+  .flor-card-polaroid img {
+    width: 100% !important;
+    height: 240px !important;
+    object-fit: cover !important;
+    border-radius: 14px !important;
+    aspect-ratio: auto !important;
+  }
+
+  .flor-card-polaroid h4 {
+    font-size: 1.3rem !important;
+    margin-top: 1rem !important;
+  }
+
+  .flor-card-polaroid p {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .flor-card-polaroid .btn,
+  .flor-card-polaroid button,
+  .flor-card-polaroid a {
+    width: 100% !important;
+    margin-top: 1rem !important;
+  }
 
 }
 
@@ -316,24 +345,49 @@ html, body {
 }
 
 /* ── CUIDADO DE FLORES ────────────────────────────────────── */
+/* ── CUIDADO DE FLORES BONITO MOBILE ───────────────── */
 @media (max-width: 768px) {
+
   [class*="cuidado-grid"],
   [class*="tips-grid"] {
     display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 0.75rem !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.3rem !important;
   }
 
   [class*="cuidado-card"],
-[class*="tip-card"] {
-  max-width: 100% !important;
-}
+  [class*="tip-card"] {
+    width: 100% !important;
+    max-width: 360px !important;
+    margin: auto !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+    padding-bottom: 1rem !important;
+  }
 
-[class*="cuidado-card"] img,
-[class*="tip-card"] img {
-  height: 140px !important;
-  object-fit: cover !important;
-}
+  [class*="cuidado-card"] img,
+  [class*="tip-card"] img {
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+  }
+
+  [class*="cuidado-card"] h3,
+  [class*="tip-card"] h3,
+  [class*="cuidado-card"] h4,
+  [class*="tip-card"] h4 {
+    font-size: 1.25rem !important;
+    padding: 0 1rem !important;
+    margin-top: 1rem !important;
+  }
+
+  [class*="cuidado-card"] p,
+  [class*="tip-card"] p {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    padding: 0 1rem !important;
+  }
+
 }
 
 /* ── GALERÍA ──────────────────────────────────────────────── */
