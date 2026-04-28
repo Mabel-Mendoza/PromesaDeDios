@@ -124,21 +124,24 @@ html, body {
   }
 
   .flor-card {
-    width: calc(50% - 0.5rem) !important;
-    min-width: 140px !important;
-  }
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
 
   .flor-card img {
-    height: 140px !important;
-  }
+  height: 130px !important;
+  object-fit: cover !important;
+}
 
-  .flor-card-body {
-    padding: 0.75rem !important;
-  }
+.flor-card-body {
+  padding: 0.6rem !important;
+}
 
-  .flor-card-body h4 {
-    font-size: 0.9rem !important;
-  }
+.flor-card-body h4 {
+  font-size: 0.85rem !important;
+  line-height: 1.2 !important;
+}
 
   .flor-card-body .precio {
     font-size: 1rem !important;
@@ -294,9 +297,19 @@ html, body {
   /* Blog grid: 1 col */
   [class*="blog-grid"],
   [class*="blog-cards"] {
-    grid-template-columns: 1fr !important;
-    flex-direction: column !important;
+    display: grid !important;
+  grid-template-columns: 1fr 1fr !important; 
+  gap: 0.75rem !important;
   }
+
+  [class*="blog-card"] img {
+  height: 140px !important;
+  object-fit: cover !important;
+}
+
+[class*="blog-card"] {
+  max-width: 100% !important;
+}
 }
 
 /* ── EVENTOS ──────────────────────────────────────────────── */
@@ -438,8 +451,16 @@ html, body {
   .footer-col ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start !important;
   }
+
+  .footer-col ul li {
+  text-align: left !important;
+}
+
+.footer-col.nav-col ul {
+  align-items: flex-start !important;
+}
 
   .footer-redes {
     justify-content: center !important;
