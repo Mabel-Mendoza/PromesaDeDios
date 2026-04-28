@@ -345,47 +345,62 @@ html, body {
 }
 
 /* ── CUIDADO DE FLORES ────────────────────────────────────── */
-/* ── CUIDADO DE FLORES BONITO MOBILE ───────────────── */
+/* =====================================================
+   CUIDADO DE FLORES MOBILE FIX DEFINITIVO
+===================================================== */
 @media (max-width: 768px) {
 
-  [class*="cuidado-grid"],
-  [class*="tips-grid"] {
+  .cuidado-cards{
     display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 1.3rem !important;
+    padding: 0 0.8rem !important;
   }
 
-  [class*="cuidado-card"],
-  [class*="tip-card"] {
+  .cuidado-card{
     width: 100% !important;
-    max-width: 360px !important;
-    margin: auto !important;
-    border-radius: 18px !important;
+    max-width: 370px !important;
+    margin: 0 auto !important;
+    background: #fff !important;
+    border-radius: 22px !important;
     overflow: hidden !important;
-    padding-bottom: 1rem !important;
+    box-shadow: 0 10px 24px rgba(0,0,0,.08) !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
 
-  [class*="cuidado-card"] img,
-  [class*="tip-card"] img {
+  .cuidado-card img{
+    display: block !important;
     width: 100% !important;
-    height: 220px !important;
+    height: 240px !important;
     object-fit: cover !important;
   }
 
-  [class*="cuidado-card"] h3,
-  [class*="tip-card"] h3,
-  [class*="cuidado-card"] h4,
-  [class*="tip-card"] h4 {
-    font-size: 1.25rem !important;
-    padding: 0 1rem !important;
-    margin-top: 1rem !important;
+  .cuidado-frase{
+    padding: 1rem 1rem 0.4rem !important;
+    font-style: italic !important;
+    font-size: 0.92rem !important;
+    line-height: 1.5 !important;
+    color: #7a5b52 !important;
+    text-align: center !important;
   }
 
-  [class*="cuidado-card"] p,
-  [class*="tip-card"] p {
+  .cuidado-info{
+    padding: 0.2rem 1rem 1.2rem !important;
+    text-align: center !important;
+  }
+
+  .cuidado-info h4{
+    font-size: 1.35rem !important;
+    margin: 0.4rem 0 0.6rem !important;
+    color: #6a4e44 !important;
+  }
+
+  .cuidado-info p{
     font-size: 0.95rem !important;
     line-height: 1.6 !important;
-    padding: 0 1rem !important;
+    margin: 0 !important;
+    color: #444 !important;
   }
 
 }
