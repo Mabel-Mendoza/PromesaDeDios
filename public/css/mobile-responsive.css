@@ -124,24 +124,21 @@ html, body {
   }
 
   .flor-card {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: space-between !important;
-}
+    width: calc(50% - 0.5rem) !important;
+    min-width: 140px !important;
+  }
 
   .flor-card img {
-  height: 130px !important;
-  object-fit: cover !important;
-}
+    height: 140px !important;
+  }
 
-.flor-card-body {
-  padding: 0.6rem !important;
-}
+  .flor-card-body {
+    padding: 0.75rem !important;
+  }
 
-.flor-card-body h4 {
-  font-size: 0.85rem !important;
-  line-height: 1.2 !important;
-}
+  .flor-card-body h4 {
+    font-size: 0.9rem !important;
+  }
 
   .flor-card-body .precio {
     font-size: 1rem !important;
@@ -297,19 +294,9 @@ html, body {
   /* Blog grid: 1 col */
   [class*="blog-grid"],
   [class*="blog-cards"] {
-    display: grid !important;
-  grid-template-columns: 1fr 1fr !important; 
-  gap: 0.75rem !important;
+    grid-template-columns: 1fr !important;
+    flex-direction: column !important;
   }
-
-  [class*="blog-card"] img {
-  height: 140px !important;
-  object-fit: cover !important;
-}
-
-[class*="blog-card"] {
-  max-width: 100% !important;
-}
 }
 
 /* ── EVENTOS ──────────────────────────────────────────────── */
@@ -327,24 +314,11 @@ html, body {
 
 /* ── CUIDADO DE FLORES ────────────────────────────────────── */
 @media (max-width: 768px) {
- [class*="cuidado-grid"],
+  [class*="cuidado-grid"],
   [class*="tips-grid"] {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  gap: 0.75rem !important;
+    grid-template-columns: 1fr !important;
+    flex-direction: column !important;
   }
-
-  [class*="cuidado-card"],
-[class*="tip-card"] {
-  max-width: 100% !important;
-}
-
-[class*="cuidado-card"] img,
-[class*="tip-card"] img {
-  height: 140px !important;
-  object-fit: cover !important;
-}
-
 }
 
 /* ── GALERÍA ──────────────────────────────────────────────── */
@@ -464,16 +438,8 @@ html, body {
   .footer-col ul {
     display: flex;
     flex-direction: column;
-    align-items: flex-start !important;
+    align-items: center;
   }
-
-  .footer-col ul li {
-  text-align: left !important;
-}
-
-.footer-col.nav-col ul {
-  align-items: flex-start !important;
-}
 
   .footer-redes {
     justify-content: center !important;
