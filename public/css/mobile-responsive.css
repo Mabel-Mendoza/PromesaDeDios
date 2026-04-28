@@ -584,3 +584,49 @@ html, body {
     margin-bottom: 1.5rem !important;
   }
 }
+
+/* =========================================
+   ELIMINAR ESPACIO ENTRE HEADER Y HERO
+========================================= */
+
+html, body{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+main{
+  margin: 0 !important;
+  padding-top: 0 !important;
+}
+
+header{
+  margin-bottom: 0 !important;
+}
+
+main section:first-child,
+main .flor-hero:first-child,
+main .cat-hero:first-child,
+main .blog-hero-copy:first-child,
+main .eventos-hero:first-child{
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.flor-hero,
+.cat-hero,
+.blog-hero-copy,
+.eventos-hero{
+  margin-top: 0 !important;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+main{
+  padding-top: 44px !important;
+}
