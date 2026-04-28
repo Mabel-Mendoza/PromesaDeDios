@@ -650,3 +650,42 @@ header{
 main{
   padding-top: 44px !important;
 }
+
+
+/* =========================================
+   FIX HEADER + HERO SIN ESPACIO
+========================================= */
+
+html,
+body{
+  margin:0 !important;
+  padding:0 !important;
+}
+
+header{
+  position: fixed !important;
+  top:0 !important;
+  left:0 !important;
+  right:0 !important;
+  width:100% !important;
+  z-index:9999 !important;
+  margin:0 !important;
+}
+
+header h1{
+  margin:0 !important;
+}
+
+main{
+  margin:0 !important;
+  padding:44px 0 0 0 !important; /* altura header */
+}
+
+main > section:first-child,
+main > div:first-child,
+.flor-hero,
+.cat-hero,
+.blog-hero-copy,
+.eventos-hero{
+  margin-top:0 !important;
+}
